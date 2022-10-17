@@ -1,2 +1,1 @@
-# CrossA11y-proj-website
-Project website for CrossA11y
+# Project website for CrossA11y
