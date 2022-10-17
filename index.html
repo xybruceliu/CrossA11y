@@ -1,1 +1,155 @@
-<p>hello world<p>
+<!-- BRUCE PROJECT SITE -->
+<!-- COPYRIGHT 2022 XINGYU BRUCE LIU XINGYULIU@UCLA.EDU -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CrossA11y</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body>
+        <div class="container title px-4 pt-5 text-center">
+            <h1>CrossA11y: Identifying Video Accessibility Issues <br> via Cross-modal Grounding</h1>
+        </div>
+
+        <div class="container authors pt-3">
+            <div class="row">
+
+                <div class="author col text-center">
+                    <div class="author-name">
+                        <!-- link -->
+                        <a href="https://xingyuliu.com/" target="_blank">Xingyu "Bruce" Liu</a>
+                    </div>
+                    <div class="author-affiliation">
+                        UCLA
+                    </div>
+                </div>
+
+                <div class="author col text-center">
+                    <div class="author-name">
+                        <!-- link -->
+                        <a href="https://www.violynnewang.com/" target="_blank">Ruolin Wang</a>
+                    </div>
+                    <div class="author-affiliation">
+                        UCLA
+                    </div>
+                </div>
+
+                <div class="author col text-center">
+                    <div class="author-name">
+                        <!-- link -->
+                        <a href="https://dingzeyu.li/" target="_blank">Dingzeyu Li</a>
+                    </div>
+                    <div class="author-affiliation">
+                        Adobe Research
+                    </div>
+                </div>
+
+                <div class="author col text-center">
+                    <div class="author-name">
+                        <!-- link -->
+                        <a href="https://xac.is/" target="_blank">Xiang 'Anthony' Chen</a>
+                    </div>
+                    <div class="author-affiliation">
+                        UCLA
+                    </div>
+                </div>
+
+                <div class="author col text-center">
+                    <div class="author-name">
+                        <!-- link -->
+                        <a href="https://amypavel.com/" target="_blank">Amy Pavel</a>
+                    </div>
+                    <div class="author-affiliation">
+                        UT Austin
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container teaser-image pt-5">
+            <img src="teaser.png" alt="Our system (A) identifies accessibility issues by locating modality asymmetries between audio segments and video segments using cross-modal grounding. 
+            (B) lets authors address accessibility issues using the CrossA11y interface to write captions and video descriptions,
+             and (C) creates a more accessible video from the authored descriptions." class="img-fluid">
+
+        </div>
+
+        <div class="container abstract pt-4">
+            <h3>Abstract</h3>
+            <p>
+                Authors make their videos visually accessible by adding audio descriptions (AD), and auditorily accessible by adding closed captions (CC). 
+                However, creating AD and CC is challenging and tedious, especially for non-professional describers and captioners, due to the difficulty of identifying 
+                accessibility problems in videos. A video author will have to watch the video through and manually check for inaccessible information frame-by-frame, 
+                for both visual and auditory modalities. In this paper, we present CrossA11y, a system that helps authors efficiently detect and address visual and auditory 
+                accessibility issues in videos. Using cross-modal grounding analysis, CrossA11y automatically measures accessibility of visual and audio segments in a video 
+                by checking for modality asymmetries. CrossA11y then displays these segments and surfaces visual and audio accessibility issues in a unified interface, 
+                making it intuitive to locate, review, script AD/CC in-place, and preview the described and captioned video immediately. We demonstrate the effectiveness of 
+                CrossA11y through a lab study with 11 participants, comparing to existing baseline.
+            </p>
+        </div>
+
+        <div class="container paper pt-4">
+            <h3> Paper </h3>
+            <div class="paper-downloads">
+                <a href="https://doi.org/10.1145/3526113.3545703" target="_blank">DOI</a> | <a href="https://arxiv.org/pdf/2208.11144.pdf" target="_blank">arXiv Preprint</a> | <a href="https://youtu.be/HDqjnHOZ7J8" target="_blank">Video</a> 
+            </div>
+        </div>
+
+
+        <div class="container demo pt-4">
+            <h3> Online Demo </h3>
+            <div class="paper-demos">
+                <ul>
+                    <li>
+                        <a href="http://xingyuliu.pythonanywhere.com/prototype/wezZVZXFO3U/v3" target="_blank">Easy Cheesecake Recipe: How To Make Cheesecake</a>
+                    </li>
+                    <li>
+                        <a href="http://xingyuliu.pythonanywhere.com/prototype/_97kyZVWVG0/v3" target="_blank">Easy Halloween Lantern Craft for Kids</a>
+                    </li>
+                    <li>
+                        <a href="http://xingyuliu.pythonanywhere.com/prototype/ZguPcV9MmyM/v3" target="_blank">Barstool Pizza Review - Pelham Pizza (Pelham, NY)</a>
+                    </li>
+                    <li>
+                        <a href="http://xingyuliu.pythonanywhere.com/prototype/TMxZ7vooRm8/v3" target="_blank">my first day of college (ucla) vlog!</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        
+
+        <div class="container video pt-4">
+            <!-- embed youtube video -->
+            <h3> Video </h3>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/HDqjnHOZ7J8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="container bibtex py-4">
+            <h3>Bibtex</h3>
+            <p class="bibtex-text">
+                @inproceedings{liu2022crossa11y, <br>
+                author = {Liu, Xingyu and Wang, Ruolin and Li, Dingzeyu and Chen, Xiang `Anthony' and Pavel, Amy}, <br>
+                title = {{CrossA11y: Identifying Video Accessibility Issues via Cross-modal Grounding}}, <br>
+                year = {2022}, <br>
+                booktitle = {To Appear, UIST '22}, <br>
+                series = {UIST '22} <br>
+                organization={ACM}}
+            </p>
+        </div>
+
+
+    </body>
+
+
+    <!-- javascript -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</html>
